@@ -60,11 +60,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
       let newUser = NSEntityDescription.insertNewObject(forEntityName: "UserTable", into: database_Context)
         
         
-        /*        newUser.setValue(self.FirstNameOutlet.text, forKey: "firstName")
-         newUser.setValue(self.LastNameOutlet.text, forKey: "lastName")
-         FirstNameOutlet.text = ""
-         LastNameOutlet.text = ""
-         */
+       
 
         newUser.setValue(self.FirstNameOutlet.text, forKey: "firstName")
         newUser.setValue(self.LastNameOutlet.text, forKey: "lastName")
@@ -73,13 +69,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
         
         
         
-        
-        /*        newUser.setValue(self.FirstNameOutlet.text, forKey: "firstName")
-         newUser.setValue(self.LastNameOutlet.text, forKey: "lastName")
-         FirstNameOutlet.text = ""
-         LastNameOutlet.text = ""
-         */
-        
+           
         do
         {
             try database_Context.save()
