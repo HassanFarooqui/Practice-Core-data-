@@ -59,7 +59,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
         //  let entityInstanceNewUser = NSEntityDescription.entity(forEntityName: "UserTable", in: database_Context)
       let newUser = NSEntityDescription.insertNewObject(forEntityName: "UserTable", into: database_Context)
         
-        
+        //  let entityInstanceNewUser = NSEntityDescription.entity(forEntityName: "UserTable", in: database_Context)
        
 
         newUser.setValue(self.FirstNameOutlet.text, forKey: "firstName")
