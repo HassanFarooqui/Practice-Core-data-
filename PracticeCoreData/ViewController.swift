@@ -68,7 +68,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
         LastNameOutlet.text = ""
         
         
-        
+         //  let entityInstanceNewUser = NSEntityDescription.entity(forEntityName: "UserTable", in: database_Context)
            
         do
         {
