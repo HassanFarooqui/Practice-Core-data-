@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A572000D2005EE7B005AA30B /* secondVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A572000C2005EE7B005AA30B /* secondVC.swift */; };
 		A572FFDC2005CFBE005AA30B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A572FFDB2005CFBE005AA30B /* AppDelegate.swift */; };
 		A572FFDE2005CFBE005AA30B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A572FFDD2005CFBE005AA30B /* ViewController.swift */; };
 		A572FFE12005CFBE005AA30B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A572FFDF2005CFBE005AA30B /* Main.storyboard */; };
@@ -36,6 +37,7 @@
 
 /* Begin PBXFileReference section */
 		A57200002005CFBF005AA30B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A572000C2005EE7B005AA30B /* secondVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = secondVC.swift; sourceTree = "<group>"; };
 		A572FFD82005CFBE005AA30B /* PracticeCoreData.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PracticeCoreData.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A572FFDB2005CFBE005AA30B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A572FFDD2005CFBE005AA30B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -106,6 +108,7 @@
 				A572FFE72005CFBE005AA30B /* LaunchScreen.storyboard */,
 				A572FFEA2005CFBE005AA30B /* Info.plist */,
 				A572FFE22005CFBE005AA30B /* PracticeCoreData.xcdatamodeld */,
+				A572000C2005EE7B005AA30B /* secondVC.swift */,
 			);
 			path = PracticeCoreData;
 			sourceTree = "<group>";
@@ -196,6 +199,7 @@
 				TargetAttributes = {
 					A572FFD72005CFBE005AA30B = {
 						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 8GWSL85966;
 						ProvisioningStyle = Automatic;
 					};
 					A572FFEE2005CFBF005AA30B = {
@@ -264,6 +268,7 @@
 			files = (
 				A572FFDE2005CFBE005AA30B /* ViewController.swift in Sources */,
 				A572FFE42005CFBE005AA30B /* PracticeCoreData.xcdatamodeld in Sources */,
+				A572000D2005EE7B005AA30B /* secondVC.swift in Sources */,
 				A572FFDC2005CFBE005AA30B /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -414,6 +419,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 8GWSL85966;
 				INFOPLIST_FILE = PracticeCoreData/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.HigherVisibility.PracticeCoreData;
@@ -426,6 +432,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 8GWSL85966;
 				INFOPLIST_FILE = PracticeCoreData/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.HigherVisibility.PracticeCoreData;
