@@ -45,23 +45,49 @@
                                 <color key="backgroundColor" red="1" green="0.40300496769999999" blue="0.41513806800000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="Show Data"/>
                                 <connections>
-                                    <action selector="BtnShowData:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dyF-QT-c5P"/>
                                     <segue destination="g2p-ZA-mV5" kind="show" id="UxK-Mo-1Jx"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MVM-pp-i1K">
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u7K-p8-RGp">
+                                <color key="backgroundColor" red="1" green="0.40300496769999999" blue="0.41513806800000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Search"/>
+                                <connections>
+                                    <action selector="BtnSave:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4uo-uw-AFn"/>
+                                    <action selector="BtnSearchAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bCY-6u-Vfe"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VUf-mk-aeR">
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="MVM-pp-i1K" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="13" id="0bi-7V-SEm"/>
                             <constraint firstAttribute="trailingMargin" secondItem="yhT-km-JXA" secondAttribute="trailing" constant="12" id="7Lz-Em-3uK"/>
                             <constraint firstItem="oPn-5k-Hbg" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="13" id="7Rq-dv-dYz"/>
                             <constraint firstItem="GRE-4v-GW3" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="94u-5C-eZJ"/>
+                            <constraint firstItem="MVM-pp-i1K" firstAttribute="top" secondItem="8lR-cC-MaK" secondAttribute="bottom" constant="8" id="Ado-Ef-gph"/>
+                            <constraint firstItem="VUf-mk-aeR" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="13" id="Aui-AX-pTv"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="u7K-p8-RGp" secondAttribute="trailing" constant="12" id="C0e-nD-5He"/>
+                            <constraint firstItem="u7K-p8-RGp" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="13" id="EH0-db-0AK"/>
                             <constraint firstItem="8lR-cC-MaK" firstAttribute="top" secondItem="yhT-km-JXA" secondAttribute="bottom" constant="31" id="Hr6-Pa-i0O"/>
                             <constraint firstItem="yhT-km-JXA" firstAttribute="top" secondItem="oPn-5k-Hbg" secondAttribute="bottom" constant="20" id="IRK-Qb-UI5"/>
                             <constraint firstAttribute="trailingMargin" secondItem="503-3A-0iv" secondAttribute="trailing" constant="12" id="IoC-lY-1Pm"/>
+                            <constraint firstItem="u7K-p8-RGp" firstAttribute="top" secondItem="MVM-pp-i1K" secondAttribute="bottom" constant="8" id="LHu-CT-ss3"/>
                             <constraint firstItem="503-3A-0iv" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="13" id="NHM-pt-GXN"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="VUf-mk-aeR" secondAttribute="trailing" constant="12" id="OVg-0f-3fS"/>
                             <constraint firstItem="yhT-km-JXA" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="13" id="PSd-L2-yIc"/>
                             <constraint firstItem="8lR-cC-MaK" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="13" id="Yr3-BB-dxh"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="503-3A-0iv" secondAttribute="bottom" constant="68" id="bnH-HU-1We"/>
+                            <constraint firstItem="VUf-mk-aeR" firstAttribute="top" secondItem="u7K-p8-RGp" secondAttribute="bottom" constant="16" id="dOZ-7u-z97"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="MVM-pp-i1K" secondAttribute="trailing" constant="12" id="hNS-qk-Xj9"/>
                             <constraint firstItem="GRE-4v-GW3" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="46" id="has-Ln-bIu"/>
                             <constraint firstAttribute="trailingMargin" secondItem="oPn-5k-Hbg" secondAttribute="trailing" constant="12" id="iQ6-K9-7KT"/>
                             <constraint firstItem="oPn-5k-Hbg" firstAttribute="top" secondItem="GRE-4v-GW3" secondAttribute="bottom" constant="23" id="lZw-Hh-RMm"/>
@@ -73,6 +99,8 @@
                         <outlet property="FirstNameOutlet" destination="oPn-5k-Hbg" id="Mn6-fF-iW6"/>
                         <outlet property="LastNameOutlet" destination="yhT-km-JXA" id="9MW-Lh-iKP"/>
                         <outlet property="TbxFirstName" destination="oPn-5k-Hbg" id="mkj-yV-XBJ"/>
+                        <outlet property="TbxFirstNameSearchField" destination="MVM-pp-i1K" id="tlF-6q-WCL"/>
+                        <outlet property="TbxResultLabel" destination="VUf-mk-aeR" id="qvC-6Y-Uas"/>
                         <outlet property="tbxLastName" destination="yhT-km-JXA" id="Lb6-Zc-TVy"/>
                     </connections>
                 </viewController>

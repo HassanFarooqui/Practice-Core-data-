@@ -13,7 +13,7 @@ class secondVC: UIViewController, UIWebViewDelegate, UITableViewDataSource
 {
 
     @IBOutlet weak var mytableOutlet: UITableView!
-    var userArry:[String] = []
+    var userArry:[NSManagedObject] = []
     override func viewDidLoad()
          {
         super.viewDidLoad()
@@ -24,18 +24,6 @@ class secondVC: UIViewController, UIWebViewDelegate, UITableViewDataSource
         
 
           }
-
-    
-   
-    
-    
-    
-    
-    
-    
-    
-    
-    
     
     func fetchData()
     {
@@ -51,19 +39,42 @@ class secondVC: UIViewController, UIWebViewDelegate, UITableViewDataSource
             
             for item in result as! [NSManagedObject]
             {
-
-            let firstName = item.value(forKey: "firstName") as! String
-            let lastName = item.value(forKey: "lastName") as! String
                 
-                self.userArry.append(firstName+" "+lastName)
-                
-                
+                self.userArry.append(item)
             }
         }
         catch
         {
              print("Error While Fetching")
         }
+    }
+    
+    
+    func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
+        return true
+    }
+    
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == UITableViewCellEditingStyle.delete
+        {
+            let app_Del_Instance = UIApplication.shared.delegate as! AppDelegate
+            
+            let database_Context:NSManagedObjectContext = app_Del_Instance.persistentContainer.viewContext
+            
+            database_Context.delete(self.userArry[indexPath.row])
+            do
+            {
+                try database_Context.save()
+                self.userArry.removeAll()
+                self.fetchData()
+                self.mytableOutlet.reloadData()
+            }
+            catch
+            {
+                print("error in showing data")
+            }
+        }
+        
     }
     
     
@@ -76,9 +87,14 @@ class secondVC: UIViewController, UIWebViewDelegate, UITableViewDataSource
     }
     
     
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
+    {
         let Cell = tableView.dequeueReusableCell(withIdentifier: "cell")
-        Cell?.textLabel?.text = self.userArry[indexPath.row]
+        
+        let firstName = self.userArry[indexPath.row].value(forKey: "firstName") as! String
+        let lastName = self.userArry[indexPath.row].value(forKey: "lastName") as! String
+
+        Cell?.textLabel?.text = "\(firstName);\(lastName)"
         return Cell!
     }
     

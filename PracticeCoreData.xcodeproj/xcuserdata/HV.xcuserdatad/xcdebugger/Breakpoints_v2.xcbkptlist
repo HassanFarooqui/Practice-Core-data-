@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "PracticeCoreData/secondVC.swift"
-            timestampString = "537266999.851912"
+            timestampString = "537351930.778782"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "43"
-            endingLineNumber = "43"
+            startingLineNumber = "31"
+            endingLineNumber = "31"
             landmarkName = "fetchData()"
             landmarkType = "7">
          </BreakpointContent>
